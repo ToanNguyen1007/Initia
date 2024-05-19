@@ -102,7 +102,17 @@ echo "Blocks left: $blocks_left"
 ```
 initiad q bank balances $(initiad keys show wallet -a)
 ```
-## 11. CREAT VALIDATORS
+## 11. CREAT WALLET
+```
+initiad keys add wallet
+```
+```
+initiad keys add wallet --recover
+```
+```
+initiad keys list
+```
+## 12. CREAT VALIDATORS
 ```
 initiad tx mstaking create-validator \
     --amount="1000000uinit" \
@@ -115,7 +125,7 @@ initiad tx mstaking create-validator \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01"
 ```
-## 12. STAKE
+## 13. STAKE
 ```
 initiad tx mstaking delegate valoper_here 1000000uinit --from wallet_name_here --gas=2000000 --fees=300000uinit -y
 ```
