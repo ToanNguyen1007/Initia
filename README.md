@@ -1,5 +1,5 @@
 # Initia
-#PREPARE
+# PREPARE
 ```
 sudo apt update && \
 sudo apt install curl git jq build-essential gcc unzip wget lz4 -y
